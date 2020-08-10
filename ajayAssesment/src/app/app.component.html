@@ -1,74 +1,7 @@
-<div class="container">
-
-  <h1>Registeration Form</h1>
-
-<br><br><br>
-  <router-outlet></router-outlet>
-  <br><br><br>
-  <form [formGroup]="registerForm"  (ngSubmit)="onsubmit()">
-    <div class="form-group" >
-        <input type="email" class="form-control"  name="email" formControlName="email" placeholder="Enter Email" [(ngModel)]="email_id">
-          <!-- Displaying the span if orm is not valid -->
-        <span *ngIf="!registerForm.get('email').valid && registerForm.get('email').touched " class="help-block" >Please enter a valid email!!</span>
-    </div>
-    <div class="form-group" >
-      <input type="password" class="form-control"  name="email" formControlName="pwd" placeholder="Enter Password" [(ngModel)]="pwd">
-        <!-- Displaying the span if orm is not valid -->
-      <span *ngIf="!registerForm.get('pwd').valid && registerForm.get('pwd').touched " class="help-block" >Please enter a valid Password!!</span>
-  </div>
-    <div class="form-group" >
-      <input type="text" class="form-control"  name="fusername" formControlName="firstname" placeholder="Enter firstname" [(ngModel)]="fname">
-      <!-- Displaying the span if orm is not valid -->
-      <span *ngIf="!registerForm.get('firstname').valid && registerForm.get('firstname').touched " class="help-block" >Please enter username!!</span>
-   </div>
-
-   <div class="form-group" >
-    <input type="text" class="form-control"  name="lusername" formControlName="lastname" placeholder="Enter Lastname" [(ngModel)]="lname">
-    <!-- Displaying the span if orm is not valid -->
-    <span *ngIf="!registerForm.get('lastname').valid && registerForm.get('lastname').touched " class="help-block" >Please enter Lastname!!</span>
- </div>
-
- <div class="form-group" >
-  <input type="text" class="form-control"  name="phone" formControlName="phone" placeholder="Enter Phone Number">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('phone').valid && registerForm.get('phone').touched " class="help-block" >Please enter valid Phone Number!!</span>
-</div>
-
-<div class="form-group" >
-  <input type="text" class="form-control"  name="hobby" formControlName="hobby" placeholder="Enter Your Hobby">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('hobby').valid && registerForm.get('hobby').touched " class="help-block" >Please enter valid Phone Number!!</span>
-</div>
-<div class="form-group" >
-  <input type="text" class="form-control"  name="city" formControlName="city" placeholder="Enter Your City">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('city').valid && registerForm.get('city').touched " class="help-block" >Enter your city</span>
-</div>
-<div class="form-group" >
-  <input type="text" class="form-control"  name="state" formControlName="state" placeholder="Enter Your state">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('state').valid && registerForm.get('state').touched " class="help-block" >Enter your State</span>
-</div>
-<div class="form-group" >
-  <input type="text" class="form-control"  name="country" formControlName="country" placeholder="Enter Your country">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('country').valid && registerForm.get('country').touched " class="help-block" >Enter your Country</span>
-</div>
-<div class="form-group" >
-  <input type="text" class="form-control"  name="githuburl" formControlName="githuburl" placeholder="Enter Your Git Hub URL">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('githuburl').valid && registerForm.get('githuburl').touched " class="help-block" >Enter your Country</span>
-</div>
-
-<div class="form-group" >
-  <label for="upload">Upload Photo</label>
-  <input type="file" class="form-control" id="upload" name="upload" formControlName="upload">
-  <!-- Displaying the span if orm is not valid -->
-  <span *ngIf="!registerForm.get('upload').valid && registerForm.get('upload').touched " class="help-block" >Upload your photo</span>
-</div>
-
-    <button type="submit" class="btn btn-primary">submit</button>
+<div  class="container">
     
-  </form>
+
+<router-outlet></router-outlet>
+
 
 </div>
