@@ -8,7 +8,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [
+const routes: Routes = [ 
+
   {path:'',component:HomeComponent},
   {path:'success',component:ResponseComponent},
   {path:'register',component:RegisterComponent},

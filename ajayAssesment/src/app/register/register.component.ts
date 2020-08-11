@@ -45,7 +45,8 @@ export class RegisterComponent implements OnInit {
     if(this.registerForm.valid==true){
       alert("valid");
    
-    let url="http://127.0.0.1:3000/register/"+this.email_id+"/"+this.pwd+"/"+this.fname+"/"+this.lname;
+    // let url="http://127.0.0.1:3000/register/"+this.email_id+"/"+this.pwd+"/"+this.fname+"/"+this.lname;
+    let url="http://ajaykrishnan99.pythonanywhere.com/register/"+this.email_id+"/"+this.pwd+"/"+this.fname+"/"+this.lname;
  
     this.http.post(url,{}).toPromise().then((data:any)=>{alert("Submitted");console.log(data);
 
